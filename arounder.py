@@ -33,7 +33,7 @@ for file in path:
     shutil.make_archive(folder, "zip", folder)
 
     print("INFO: Cleaning up")
-    os.remove(folder)
+    shutil.rmtree(folder)
     os.remove(file)
     shutil.rmtree(tempfolder)
 
